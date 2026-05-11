@@ -1,0 +1,65 @@
+/* Variables & Reset de base */
+:root {
+  --primary: #2563eb;
+  --danger: #ef4444;
+  --text: #334155;
+}
+
+body { 
+  font-family: system-ui, sans-serif; 
+  background: #f8fafc; 
+  color: var(--text); 
+  line-height: 1.5;
+}
+
+.container { max-width: 600px; margin: 3rem auto; padding: 0 1rem; }
+
+h1 { 
+  text-align: center; 
+  font-size: 2.5rem; 
+  color: var(--primary); 
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+}
+
+.card, .contact-item { 
+  background: white; 
+  padding: 1rem; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 1rem;
+}
+
+form { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+
+input { 
+  padding: 10px; 
+  border: 1px solid #cbd5e1; 
+  border-radius: 6px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-bar { margin-bottom: 1.5rem; border-color: var(--primary); }
+
+button { 
+  padding: 10px 15px; 
+  border-radius: 6px; 
+  border: none; 
+  cursor: pointer; 
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.8; }
+
+form button { grid-column: span 2; background: var(--primary); color: white; }
+
+.btn-edit { background: #e2e8f0; color: var(--text); }
+.btn-delete { background: var(--danger); color: white; margin-left: 8px; }
+
+.contact-item { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
